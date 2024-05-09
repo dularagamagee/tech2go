@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Landing Page</title>
+  <title>Benvenuto</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Inconsolata">
@@ -503,7 +503,7 @@ footer .copy span {
 <body>
   <div class="smooth">
     <header>
-      <h3>AWSDON</h3>
+      <h3>AWS DON</h3>
       <ul>
         <li><a href="#one">Home</a></li>
         <li><a href="#two">About</a></li>
@@ -515,30 +515,21 @@ footer .copy span {
     <section id="one">
       <div class="content parallax">
         <div>
-          <h1>AWSDON MEDiA</h1>
+          <h1>AWS DON</h1>
           <svg class="title">
-            <text x="0" y="40">AWSDON MEDiA</text>
+            <text x="0" y="40">AWS DON</text>
             <path d="M 0 66 50 61"></path>
           </svg>
           <p class="lead">
-            If you click on navigation links, smooth scrolling does not work, perhaps the functions are not supported by your browser. You can check the support on the
+          Nella seguente relazione, ti guiderò attraverso i passaggi per configurare un ambiente Docker per un progetto web, utilizzando Docker e Docker Compose. Questi strumenti semplificano la gestione dei container e consentono di creare un ambiente isolato e portatile per sviluppare e distribuire le tue applicazioni.
              <a class="leadlink" href="https://caniuse.com/#search=scroll-behavior" target="_blank">Can I use</a> site.
           </p>
-          <p class="lead">
-            And also added a parallax effect and logo animation, a sample of which you
-             <a class="leadlink" href="https://codepen.io/andrejsharapov/pen/PVJrLO" target="blank">can find here.</a>
-          </p>
+          
         </div>
-        <div class="blur">
-          <form><img src="https://s.cdpn.io/profiles/user/2727382/80.jpg?1545923020"/>
-            <input type="text" placeholder="Email:"/>
-            <input type="text" placeholder="Password:"/><a class="button" href="#bottom">Follow me</a>
-          </form>
-        </div>
-      </div>
+
     </section>
     <section id="two">
-      <h2>Section<span> two</span></h2>
+      <h2><span>INTRODUZIONE</span></h2>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum blanditiis rerum, at sunt fugit nam, labore, quas voluptate et recusandae veniam ea dignissimos deserunt! Veritatis facilis repudiandae libero distinctio tempora.</p>
       <div class="blocks">
         <div class="block">
