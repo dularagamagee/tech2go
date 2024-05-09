@@ -62,7 +62,7 @@ pre {
     require "connect/connect.php";
     session_start();
     if(isset($_SESSION['email'])) {
-        echo '<p>Email della sessione: ' . $_SESSION['email'] . '</p>';
+        echo '<p>Buona Lettura ' . $_SESSION['email'] . '</p>';
     }
     ?>
     <h3>Configurazione di Nginx:</h3>
