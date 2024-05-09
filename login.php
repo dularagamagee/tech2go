@@ -45,7 +45,7 @@ input[type="submit"] {
     padding: 10px;
     border-radius: 5px;
     border: none;
-    background-color: #007bff;
+    background-color: #e0e0e0;
     color: #fff;
     cursor: pointer;
 }
