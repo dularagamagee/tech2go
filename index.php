@@ -58,6 +58,7 @@
 
         if ($conn->query($sql) === TRUE) {
             echo "<p>Registrazione avvenuta con successo!</p>";
+            header("Location: mostra.php");
         } else {
             echo "Errore durante la registrazione: " . $conn->error;
         }
