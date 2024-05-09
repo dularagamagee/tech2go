@@ -526,24 +526,24 @@ footer .copy span {
           
         </div>
 
-        <section id="two">
-  <h2><span>INDICE</span></h2>
-  <ul class="blocks">
-    <li class="block">
-      <p>PREMESSA</p>
-    </li>
-    <li class="block">
-      <p>TEXT or ICON</p>
-    </li>
-    <li class="block">
-      <p>TEXT or ICON</p>
-    </li>
-    <li class="block">
-      <p>TEXT or ICON</p>
-    </li>
-  </ul>
-</section>
-
+    </section>
+    <section id="two">
+      <h2><span>INDICE</span></h2>
+      <div class="blocks">
+        <div class="block">
+          <p>PREMESSA</p>
+        </div>
+        <div class="block">
+          <p>TEXT or ICON</p>
+        </div>
+        <div class="block">
+          <p>TEXT or ICON</p>
+        </div>
+        <div class="block">
+          <p>TEXT or ICON</p>
+        </div>
+      </div>
+    </section>
     <section id="three">
       <div class="grid g_two">
         <div>
