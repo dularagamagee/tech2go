@@ -526,36 +526,27 @@ footer .copy span {
           
         </div>
 
-        <section id="two">
-  <h2><span>PREMESSA</span></h2>
-  <div class="content parallax">
-    <div>
-      <svg class="title">
-        <path d="M 0 66 50 61"></path>
-      </svg>
-      <p class="lead">
-        Per iniziare, installa Docker e Docker Compose utilizzando i seguenti comandi:
-      </p>
-      <div class="command-container">
-        <div class="command darker-bg">
-          <p class="lead">sudo apt update</p>
+    </section>
+    <section id="two">
+      <h2><span>PREMESSA</span></h2>
+      <div class="content parallax">
+        <div>
+          <svg class="title">
+            <path d="M 0 66 50 61"></path>
+          </svg>
+          <p class="lead">
+          Per iniziare, installa Docker e Docker Compose utilizzando i seguenti comandi:
+          </p>
+          <p class="lead">
+          <p>sudo apt update</p>
+          <p>sudo apt install -y docker.io</p>
+          <p>sudo systemctl enable docker</p>
+          <p>sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose</p>
+          <p>sudo chmod +x /usr/local/bin/docker-compose</p>
+            </p>
+          
         </div>
-        <div class="command darker-bg">
-          <p class="lead">sudo apt install -y docker.io</p>
-        </div>
-        <div class="command darker-bg">
-          <p class="lead">sudo systemctl enable docker</p>
-        </div>
-        <div class="command darker-bg">
-          <p class="lead">sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose</p>
-        </div>
-        <div class="command darker-bg">
-          <p class="lead">sudo chmod +x /usr/local/bin/docker-compose</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
     <section id="three">
       <div class="grid g_two">
         <div>
