@@ -9,11 +9,13 @@
   <style>
     str-style,
 section#one .title text,
-section#one .title path {
+section#one .title text {
   stroke-dasharray: 700;
   stroke-dashoffset: 1000;
   animation: dash 4s linear forwards;
+  fill: #fff; /* Cambia il colore del testo */
 }
+
 *,
 ::before,
 ::after {
@@ -27,9 +29,10 @@ body {
   line-height: 1.5;
   font-family: 'Inconsolata', sans-serif;
   font-size: 62.5%;
-  color: #fff;
-  background-color: #1d1e22;
+  color: #fff; /* Cambia il colore del testo se necessario */
+  background-color: #e0e0e0; /* Cambia il colore di sfondo */
 }
+
 ::-webkit-scrollbar {
   width: 8px;
   height: 6px;
