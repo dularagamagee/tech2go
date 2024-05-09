@@ -548,110 +548,52 @@ footer .copy span {
         </div>
     </section>
     <section id="three">
-      <div class="grid g_two">
-        <div>
-          <h2>Section<span> three</span></h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, esse rerum numquam, quos incidunt, sapiente tempore magnam modi libero maiores repellendus! Cupiditate dolore doloremque deserunt! Eaque accusamus rem cumque nisi.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, esse rerum numquam, quos incidunt, sapiente tempore magnam modi libero maiores repellendus! Cupiditate dolore doloremque deserunt! Eaque accusamus rem cumque nisi.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, esse rerum numquam, quos incidunt, sapiente tempore magnam modi libero maiores repellendus! Cupiditate dolore doloremque deserunt! Eaque accusamus rem cumque nisi.</p>
-        </div>
-        <div class="flex column">
-          <div class="flex column">
-            <div class="flex jcsb">
-              <h4>Comunity</h4><span>77%</span>
-            </div>
-            <progress value="77" max="100"></progress>
-          </div>
-          <div class="flex column">
-            <div class="flex jcsb">
-              <h4>Team and Developers</h4><span>65%</span>
-            </div>
-            <progress value="65" max="100"></progress>
-          </div>
-          <div class="flex column">
-            <div class="flex jcsb">
-              <h4>Marketing</h4><span>88%</span>
-            </div>
-            <progress value="88" max="100"></progress>
-          </div>
-          <div class="flex column">
-            <div class="flex jcsb">
-              <h4>Design</h4><span>68%</span>
-            </div>
-            <progress value="68" max="100"></progress>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="four">
-      <h2>Section<span> four</span></h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, dolores quibusdam! Hic facere inventore consequatur deleniti error, vero molestiae quam at iusto! Exercitationem voluptatem amet totam doloribus, tenetur et nobis?</p>
-      <div class="blocks">
-        <div class="block">
-          <h4>Author</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel sunt beatae ducimus eaque molestiae aliquid consequuntur perspiciatis dolores soluta iste voluptatibus, unde voluptate neque earum qui culpa saepe commodi. Tenetur?</p>
-        </div>
-        <div class="block">
-          <h4>Author</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel sunt beatae ducimus eaque molestiae aliquid consequuntur perspiciatis dolores soluta iste voluptatibus, unde voluptate neque earum qui culpa saepe commodi. Tenetur?</p>
-        </div>
-        <div class="dots">
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-        </div>
-      </div>
-    </section>
-    <footer id="bottom">
-      <div class="widgets">
-        <h3>AWSDON</h3>
-        <div class="widget">
-          <h5 class="follow">Follow me</h5>
-          <ul>
-            <li><a href="https://dribbble.com/andrejsharapov" target="blank">Dribbble</a></li>
-            <li><a href="https://codepen.io/andrejsharapov" target="blank">CodePen</a></li>
-            <li><a href="https://twitter.com/andrejsharapov" target="blank">Twitter</a></li>
-            <li><a href="https://www.behance.net/andrejsharapov" target="blank">Behance</a></li>
-          </ul>
-        </div>
-        <div class="widget">
-          <h5>Heading</h5>
-          <ul>
-            <li>Text</li>
-            <li>Text</li>
-            <li>Text</li>
-            <li>Text</li>
-          </ul>
-        </div>
-        <div class="widget">
-          <h5>Heading</h5>
-          <ul>
-            <li>Text</li>
-            <li>Text</li>
-            <li>Text</li>
-            <li>Text</li>
-          </ul>
-        </div>
-        <div class="widget">
-          <h5>CONTACTS</h5>
-          <ul>
-            <li>Text</li>
-            <li>Text</li>
-            <li>Text</li>
-            <li>Text</li>
-          </ul>
-        </div>
-      </div>
-      <div class="copy">
-        <p>
-          © 2019 with  <span>♥</span> <a href="https://andrejsharapov.github.io/" target="_blank">Andrej Sharapov</a></p><a href="#one">Scroll top ↑</a>
-      </div>
-    </footer>
+  <div class="grid g_two">
+    <div>
+      <h2>Section<span> three</span></h2>
+      <p class="lead">
+      Una volta completata l'installazione di Docker e Docker Compose, è necessario configurare un ambiente Docker per il progetto web. Questo ambiente Docker includerà un container NGINX per il server web e un container PHP-FPM per l'elaborazione dei file PHP.
+      </p>
+      <p class="lead">
+      Assicurati di avere una directory principale per il progetto, ad esempio 'docker-project', e all'interno di questa directory creare una cartella per il codice PHP del tuo progetto, ad esempio 'php_code'.
+      </p>
+    </div>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="script.js"></script>
-</body>
-</html>
+</section>
+<section id="four">
+  <h2>Section<span> four</span></h2>
+  <div class="blocks">
+    <div class="block">
+      <h4>Author</h4>
+      <p>Una volta configurati i container NGINX e PHP-FPM, è necessario creare un file 'docker-compose.yml' nella directory principale del progetto. Questo file definirà la configurazione dei tuoi container e le loro dipendenze.</p>
+    </div>
+    <div class="block">
+      <h4>Author</h4>
+      <p>Aggiungi i seguenti comandi al tuo file 'docker-compose.yml' per configurare i container NGINX e PHP-FPM:</p>
+      <pre><code>version: "3.9"
+services:
+   nginx:
+     build: ./nginx/
+     ports:
+       - 80:80
+  
+     volumes:
+         - ./php_code/:/var/www/html/
+
+   php:
+     build: ./php_code/
+     expose:
+       - 9000
+     volumes:
+        - ./php_code/:/var/www/html/
+</code></pre>
+    </div>
+  </div>
+</section>
+<footer id="bottom">
+  <div class="copy">
+    <p>
+      © 2024 GamageDonDularaMatteo<span></span></a></p><a href="#one">Torna su!</a>
+  </div>
+</footer>
+
