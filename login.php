@@ -55,13 +55,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </div>
 </form>
-<script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var fadeElems = document.querySelectorAll(".fade-in");
-            fadeElems.forEach(function(elem) {
-                elem.classList.add("active");
-            });
-        });
-    </script>
 </body>
 </html>

@@ -49,14 +49,6 @@ code {
 pre {
     white-space: pre-wrap;
 }
-.fade-in {
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-        }
-
-        .fade-in.active {
-            opacity: 1;
-        }
 
 </style>
 </head>
