@@ -12,7 +12,7 @@ if(isset($_POST['register'])) {
     if ($conn->query($sql) === TRUE) {
         echo "<p>Registrazione avvenuta con successo!</p>";
         // Reindirizza a mostra.php dopo la registrazione
-        header("Location: mostra.php");
+        header("location: mostra.php");
         exit();
     } else {
         echo "Errore durante la registrazione: " . $conn->error;
