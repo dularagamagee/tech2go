@@ -532,7 +532,6 @@ footer .copy span {
       <div class="content parallax">
         <div>
           <svg class="title">
-            <text x="0" y="40">AWS DON</text>
             <path d="M 0 66 50 61"></path>
           </svg>
           <p class="lead">
@@ -540,10 +539,10 @@ footer .copy span {
           </p>
           <p class="lead">
           <p>sudo apt update</p>
-          sudo apt install -y docker.io
-          sudo systemctl enable docker
-          sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-          sudo chmod +x /usr/local/bin/docker-compose
+          <p>sudo apt install -y docker.io</p>
+          <p>sudo systemctl enable docker</p>
+          <p>sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose</p>
+          <p>sudo chmod +x /usr/local/bin/docker-compose</p>
             </p>
           
         </div>
