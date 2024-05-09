@@ -131,6 +131,9 @@ RUN docker-php-ext-enable mysqli</code></pre>
     <h3>Push e Pull del Codice:</h3>
     <p>Pusha il codice dalla tua macchina locale al repository GitHub. Nell'istanza AWS, esegui il pull del codice nella cartella <code>php_code</code> con il comando:</p>
     <code>git pull</code>
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="GET">
+        <button type="submit" name="logout">Logout</button>
+    </form>
 </div>
 </body>
 </html>
