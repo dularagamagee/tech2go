@@ -1,24 +1,9 @@
-<?php
-require "connect/connect.php";
-echo "si ok";
-
-
-
-
-
-
-
-
-
-
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Registration</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -52,15 +37,34 @@ echo "si ok";
     </style>
 </head>
 <body>
-    <h2>Login</h2>
-    <form method="post">
-        <label for="email">Username:</label>
-        <input type="text" id="username" name="email" required>
+    <h2>Registration</h2>
+    <form action="register.php" method="post">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
-        <input type="submit" value="Login">
+        <input type="submit" name="register" value="Register">
     </form>
+
+    <?php
+    require "connect/connect.php";
+    // Se il form è stato inviato
+    if(isset($_POST['register'])) {
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+
+        // Query per inserire i dati nel database
+        $sql = "INSERT INTO utenti (email, password) VALUES ('$email', '$password')";
+
+        if ($conn->query($sql) === TRUE) {
+            echo "<p>Registrazione avvenuta con successo!</p>";
+        } else {
+            echo "Errore durante la registrazione: " . $conn->error;
+        }
+    }
+
+    // Chiudi la connessione
+    $conn->close();
+    ?>
 </body>
 </html>
-
-
