@@ -68,7 +68,7 @@ pre {
     <code>sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose</code>
     <code>sudo chmod +x /usr/local/bin/docker-compose</code>
 
-    <h2>Passi:</h2>
+    <h2>Step:</h2>
     <!-- Rimuovi l'output PHP qui -->
     <?php
     // Output della sessione rimossa perché già visualizzata sopra
