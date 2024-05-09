@@ -2,7 +2,12 @@
 // Avvia la sessione all'inizio dello script
 session_start();
 
-// Include il file per la connessione al database
+// Verifica se l'utente è loggato, altrimenti reindirizza alla pagina di accesso
+if (!isset($_SESSION['email'])) {
+    header("Location: login.php");
+    exit();
+}
+
 require "connect/connect.php";
 ?>
 <!DOCTYPE html>
