@@ -48,7 +48,7 @@ pre {
 <body>
 <div class="container">
     <h1>AWS DON</h1>
-    <p style="text-align: center;">Gamage Don Dulara Matteo</p>
+    
     <h2>Premesse:</h2>
     <p>Per iniziare, installa Docker e Docker Compose utilizzando i seguenti comandi:</p>
     <code>sudo apt update</code>
@@ -58,7 +58,15 @@ pre {
     <code>sudo chmod +x /usr/local/bin/docker-compose</code>
 
     <h2>Passi:</h2>
+    <?php
+    // Avvia la sessione
+    session_start();
 
+    // Verifica se l'email della sessione è impostata
+    if(isset($_SESSION['email'])) {
+        echo '<p>Email della sessione: ' . $_SESSION['email'] . '</p>';
+    }
+    ?>
     <h3>Configurazione di Nginx:</h3>
     <p>Crea una cartella chiamata <code>docker-project</code> e al suo interno crea un file <code>docker-compose.yml</code> con il seguente contenuto:</p>
     <pre><code>version: "3.9"
