@@ -77,12 +77,6 @@ pre {
     <code>sudo chmod +x /usr/local/bin/docker-compose</code>
 
     <h2>Step:</h2>
-    <!-- Rimuovi l'output PHP qui -->
-    <?php
-    // Output della sessione rimossa perché già visualizzata sopra
-    ?>
-    <!-- Fine output PHP -->
-
     <h3>Configurazione di Nginx:</h3>
     <p>Crea una cartella chiamata <code>docker-project</code> e al suo interno crea un file <code>docker-compose.yml</code> con il seguente contenuto:</p>
     <pre><code>version: "3.9"
