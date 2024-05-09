@@ -29,104 +29,63 @@ body {
   line-height: 1.5;
   font-family: 'Inconsolata', sans-serif;
   font-size: 62.5%;
-  color: #fff; /* Cambia il colore del testo se necessario */
-  background-color: #e0e0e0; /* Cambia il colore di sfondo */
+  color: #000; /* Cambiato il colore del testo in nero */
+  background-color: #fff; /* Cambiato il colore di sfondo in bianco */
 }
 
-::-webkit-scrollbar {
-  width: 8px;
-  height: 6px;
-}
-::-webkit-scrollbar-track {
-  background-color: #1d1e22;
-}
-::-webkit-scrollbar-thumb {
-  border-radius: 1em;
-  background-color: #312d3c;
-}
-::-webkit-scrollbar-thumb:hover {
-  background-color: #df2359;
-}
-a {
-  text-decoration: none;
-  color: #fff;
-}
-a:hover,
+/* Cambiato il colore del link in blu */
+a,
 a.leadlink {
-  color: #df2359;
+  color: #00f; /* Cambiato il colore del link in blu */
 }
+
+/* Cambiato il colore del titolo in nero */
 h1,
 h2,
 header a {
   text-transform: uppercase;
+  color: #000; /* Cambiato il colore del testo in nero */
 }
-.smooth {
-  margin: 0 auto;
-  padding: 0 4px;
-  padding-left: 8px;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
+
+/* Cambiato il colore del titolo in blu */
+h1,
+h2,
+header a {
+  text-transform: uppercase;
+  color: #00f; /* Cambiato il colore del titolo in blu */
 }
-header,
-footer {
-  position: relative;
-  padding: 2em 3em;
-  display: flex;
-  align-items: center;
-  font-size: 1rem;
+
+/* Cambiato il colore dell'animazione del testo in bianco */
+.title text {
+  stroke-dasharray: 700;
+  stroke-dashoffset: 1000;
+  animation: dash 4s linear forwards;
+  fill: #fff; /* Cambiato il colore del testo in bianco */
 }
-header {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 2;
-  height: 10vh;
-  background-color: #1d1e22;
+
+/* Cambiato il colore del testo normale in nero */
+p {
+  color: #000; /* Cambiato il colore del testo in nero */
 }
-header h3 {
-  position: relative;
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
-  color: #df2359;
+
+/* Cambiato il colore del testo normale in blu */
+p span {
+  color: #00f; /* Cambiato il colore del testo in blu */
 }
-header ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 1em 0;
-  display: flex;
-  width: 100%;
-  justify-content: flex-end;
-  align-items: center;
-}
-header ul li {
-  position: relative;
-  margin: 0 1em;
-  transition: all 0.2s linear;
-}
+
+/* Cambiato il colore del link nella barra di navigazione in blu */
 header ul li a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  color: #fff;
+  color: #00f; /* Cambiato il colore del testo in blu */
 }
-header ul li::before {
-  position: absolute;
-  content: '';
-  top: calc(100% + 4px);
-  left: 0;
-  width: 20px;
-  height: 2px;
-  background-color: #fff;
-  transform-origin: 0 100%;
-  transform: rotate(-5deg);
-  transition: all 0.2s ease-out;
-}
+
+/* Cambiato il colore del bordo del link nella barra di navigazione in blu */
 header ul li:hover::before {
   width: 100%;
-  background-color: #df2359;
+  background-color: #00f; /* Cambiato il colore del bordo in blu */
 }
+
 .grid {
   display: grid;
   grid-gap: 2em;
