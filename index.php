@@ -506,7 +506,7 @@ footer .copy span {
       <h3>AWS DON</h3>
       <ul>
         <li><a href="#one">INTRODUZIONE</a></li>
-        <li><a href="#two">About</a></li>
+        <li><a href="#two">PREMESSA</a></li>
         <li><a href="#three">Services</a></li>
         <li><a href="#four">Reviews</a></li>
         <li><a href="#bottom">Contact</a></li>
@@ -528,21 +528,25 @@ footer .copy span {
 
     </section>
     <section id="two">
-      <h2><span>INDICE</span></h2>
-      <div class="blocks">
-        <div class="block">
-          <p>PREMESSA</p>
+      <h2><span>PREMESSA</span></h2>
+      <div class="content parallax">
+        <div>
+          <svg class="title">
+            <text x="0" y="40">AWS DON</text>
+            <path d="M 0 66 50 61"></path>
+          </svg>
+          <p class="lead">
+          Per iniziare, installa Docker e Docker Compose utilizzando i seguenti comandi:
+          </p>
+          <p class="lead">
+          sudo apt update
+          sudo apt install -y docker.io
+          sudo systemctl enable docker
+          sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+          sudo chmod +x /usr/local/bin/docker-compose
+            </p>
+          
         </div>
-        <div class="block">
-          <p>TEXT or ICON</p>
-        </div>
-        <div class="block">
-          <p>TEXT or ICON</p>
-        </div>
-        <div class="block">
-          <p>TEXT or ICON</p>
-        </div>
-      </div>
     </section>
     <section id="three">
       <div class="grid g_two">
