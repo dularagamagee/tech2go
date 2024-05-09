@@ -9,13 +9,11 @@
   <style>
     str-style,
 section#one .title text,
-section#one .title text {
+section#one .title path {
   stroke-dasharray: 700;
   stroke-dashoffset: 1000;
   animation: dash 4s linear forwards;
-  fill: #fff; /* Cambia il colore del testo */
 }
-
 *,
 ::before,
 ::after {
@@ -29,63 +27,103 @@ body {
   line-height: 1.5;
   font-family: 'Inconsolata', sans-serif;
   font-size: 62.5%;
-  color: #000; /* Cambiato il colore del testo in nero */
-  background-color: #fff; /* Cambiato il colore di sfondo in bianco */
+  color: #fff;
+  background-color: #1d1e22;
 }
-
-/* Cambiato il colore del link in blu */
-a,
+::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background-color: #1d1e22;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 1em;
+  background-color: #312d3c;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #df2359;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover,
 a.leadlink {
-  color: #00f; /* Cambiato il colore del link in blu */
+  color: #df2359;
 }
-
-/* Cambiato il colore del titolo in nero */
 h1,
 h2,
 header a {
   text-transform: uppercase;
-  color: #000; /* Cambiato il colore del testo in nero */
 }
-
-/* Cambiato il colore del titolo in blu */
-h1,
-h2,
-header a {
-  text-transform: uppercase;
-  color: #00f; /* Cambiato il colore del titolo in blu */
+.smooth {
+  margin: 0 auto;
+  padding: 0 4px;
+  padding-left: 8px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
-
-/* Cambiato il colore dell'animazione del testo in bianco */
-.title text {
-  stroke-dasharray: 700;
-  stroke-dashoffset: 1000;
-  animation: dash 4s linear forwards;
-  fill: #fff; /* Cambiato il colore del testo in bianco */
+header,
+footer {
+  position: relative;
+  padding: 2em 3em;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
 }
-
-/* Cambiato il colore del testo normale in nero */
-p {
-  color: #000; /* Cambiato il colore del testo in nero */
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  height: 10vh;
+  background-color: #1d1e22;
 }
-
-/* Cambiato il colore del testo normale in blu */
-p span {
-  color: #00f; /* Cambiato il colore del testo in blu */
+header h3 {
+  position: relative;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: #df2359;
 }
-
-/* Cambiato il colore del link nella barra di navigazione in blu */
+header ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 1em 0;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+header ul li {
+  position: relative;
+  margin: 0 1em;
+  transition: all 0.2s linear;
+}
 header ul li a {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  color: #00f; /* Cambiato il colore del testo in blu */
+  color: #fff;
 }
-
-/* Cambiato il colore del bordo del link nella barra di navigazione in blu */
+header ul li::before {
+  position: absolute;
+  content: '';
+  top: calc(100% + 4px);
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #fff;
+  transform-origin: 0 100%;
+  transform: rotate(-5deg);
+  transition: all 0.2s ease-out;
+}
 header ul li:hover::before {
   width: 100%;
-  background-color: #00f; /* Cambiato il colore del bordo in blu */
+  background-color: #df2359;
 }
-
 .grid {
   display: grid;
   grid-gap: 2em;
@@ -510,52 +548,35 @@ footer .copy span {
         </div>
     </section>
     <section id="three">
-  <div class="grid g_two">
-    <div>
-      <h2>Section<span> three</span></h2>
-      <p class="lead">
-      Una volta completata l'installazione di Docker e Docker Compose, è necessario configurare un ambiente Docker per il progetto web. Questo ambiente Docker includerà un container NGINX per il server web e un container PHP-FPM per l'elaborazione dei file PHP.
-      </p>
-      <p class="lead">
-      Assicurati di avere una directory principale per il progetto, ad esempio 'docker-project', e all'interno di questa directory creare una cartella per il codice PHP del tuo progetto, ad esempio 'php_code'.
-      </p>
-    </div>
+      <div class="grid g_two">
+        <div>
+          <h2>Section<span> three</span></h2>
+          
+        </div>
+      </div>
+    </section>
+    <section id="four">
+      <h2>Section<span> four</span></h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, dolores quibusdam! Hic facere inventore consequatur deleniti error, vero molestiae quam at iusto! Exercitationem voluptatem amet totam doloribus, tenetur et nobis?</p>
+      <div class="blocks">
+        <div class="block">
+          <h4>Author</h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel sunt beatae ducimus eaque molestiae aliquid consequuntur perspiciatis dolores soluta iste voluptatibus, unde voluptate neque earum qui culpa saepe commodi. Tenetur?</p>
+        </div>
+        <div class="block">
+          <h4>Author</h4>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel sunt beatae ducimus eaque molestiae aliquid consequuntur perspiciatis dolores soluta iste voluptatibus, unde voluptate neque earum qui culpa saepe commodi. Tenetur?</p>
+        </div>
+      </div>
+    </section>
+    <footer id="bottom">
+      <div class="copy">
+        <p>
+          © 2024 GamageDonDularaMatteo<span></span></a></p><a href="#one">Torna su!</a>
+      </div>
+    </footer>
   </div>
-</section>
-<section id="four">
-  <h2>Section<span> four</span></h2>
-  <div class="blocks">
-    <div class="block">
-      <h4>Author</h4>
-      <p>Una volta configurati i container NGINX e PHP-FPM, è necessario creare un file 'docker-compose.yml' nella directory principale del progetto. Questo file definirà la configurazione dei tuoi container e le loro dipendenze.</p>
-    </div>
-    <div class="block">
-      <h4>Author</h4>
-      <p>Aggiungi i seguenti comandi al tuo file 'docker-compose.yml' per configurare i container NGINX e PHP-FPM:</p>
-      <pre><code>version: "3.9"
-services:
-   nginx:
-     build: ./nginx/
-     ports:
-       - 80:80
-  
-     volumes:
-         - ./php_code/:/var/www/html/
-
-   php:
-     build: ./php_code/
-     expose:
-       - 9000
-     volumes:
-        - ./php_code/:/var/www/html/
-</code></pre>
-    </div>
-  </div>
-</section>
-<footer id="bottom">
-  <div class="copy">
-    <p>
-      © 2024 GamageDonDularaMatteo<span></span></a></p><a href="#one">Torna su!</a>
-  </div>
-</footer>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
