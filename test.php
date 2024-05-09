@@ -55,17 +55,12 @@ pre {
 <body>
 <div class="container">
     <h1>AWS DON</h1>
-    
-    <h2>Premesse:</h2>
-    <!-- Rimuovi l'output PHP qui -->
     <?php
-    // Mostra il messaggio di benvenuto solo se l'email della sessione è impostata
     if(isset($_SESSION['email'])) {
         echo '<p>Buona Lettura ' . $_SESSION['email'] . '</p>';
     }
     ?>
-    <!-- Fine output PHP -->
-
+    <h2>Premesse:</h2>
     <p>Per iniziare, installa Docker e Docker Compose utilizzando i seguenti comandi:</p>
     <code>sudo apt update</code>
     <code>sudo apt install -y docker.io</code>
