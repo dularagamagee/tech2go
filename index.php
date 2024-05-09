@@ -1,6 +1,6 @@
 <?php
 require "connect/connect.php";
-
+echo "si ok";
 
 
 
