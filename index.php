@@ -54,7 +54,7 @@
         $password = $_POST['password'];
 
         // Query per inserire i dati nel database
-        $sql = "INSERT INTO utenti (email, password) VALUES ('$email', '$password')";
+        $sql = "INSERT INTO utente (email, password) VALUES ('$email', '$password')";
 
         if ($conn->query($sql) === TRUE) {
             echo "<p>Registrazione avvenuta con successo!</p>";
