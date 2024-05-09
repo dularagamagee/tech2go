@@ -539,7 +539,7 @@ footer .copy span {
           Per iniziare, installa Docker e Docker Compose utilizzando i seguenti comandi:
           </p>
           <p class="lead">
-          sudo apt update
+          <p>sudo apt update</p>
           sudo apt install -y docker.io
           sudo systemctl enable docker
           sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
