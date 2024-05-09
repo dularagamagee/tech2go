@@ -59,10 +59,35 @@ input[type="submit"]:hover {
 <div class="container">
     <h1>Login</h1>
     <form action="process_login.php" method="post">
-        <input type="text" name="username" placeholder="Username" required><br>
+        <input type="text" name="email" placeholder="Email" required><br>
         <input type="password" name="password" placeholder="Password" required><br>
         <input type="submit" value="Login">
     </form>
 </div>
 </body>
 </html>
+
+
+<?php
+require "connect/connect.php";
+$email = $_POST['email'];
+$password = $_POST['password'];
+$sql = "SELECT * FROM utente WHERE email='$email'";
+$result = $conn->query($sql);
+if ($result->num_rows == 0) {
+    echo "L'utente utilizzato non è registrato";
+} else {
+    $sql = "SELECT * FROM utente WHERE email = '$email' AND password = '$password'";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+        session_start();
+        $user_data = $result->fetch_assoc();
+        $_SESSION['id_user'] = $user_data['id'];        
+        $_SESSION['nickname'] = $user_data['nickname']; 
+        header('location: test.html');
+    } else {
+        echo "Spiacente le credenziali sono errate";
+    }
+}
+$conn->close();
+?>
