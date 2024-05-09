@@ -1,3 +1,10 @@
+<?php
+// Avvia la sessione all'inizio dello script
+session_start();
+
+// Include il file per la connessione al database
+require "connect/connect.php";
+?>
 <!DOCTYPE html>
 <html lang="it">
 <head>
@@ -50,6 +57,15 @@ pre {
     <h1>AWS DON</h1>
     
     <h2>Premesse:</h2>
+    <!-- Rimuovi l'output PHP qui -->
+    <?php
+    // Mostra il messaggio di benvenuto solo se l'email della sessione è impostata
+    if(isset($_SESSION['email'])) {
+        echo '<p>Buona Lettura ' . $_SESSION['email'] . '</p>';
+    }
+    ?>
+    <!-- Fine output PHP -->
+
     <p>Per iniziare, installa Docker e Docker Compose utilizzando i seguenti comandi:</p>
     <code>sudo apt update</code>
     <code>sudo apt install -y docker.io</code>
@@ -58,13 +74,12 @@ pre {
     <code>sudo chmod +x /usr/local/bin/docker-compose</code>
 
     <h2>Passi:</h2>
+    <!-- Rimuovi l'output PHP qui -->
     <?php
-    require "connect/connect.php";
-    session_start();
-    if(isset($_SESSION['email'])) {
-        echo '<p>Buona Lettura ' . $_SESSION['email'] . '</p>';
-    }
+    // Output della sessione rimossa perché già visualizzata sopra
     ?>
+    <!-- Fine output PHP -->
+
     <h3>Configurazione di Nginx:</h3>
     <p>Crea una cartella chiamata <code>docker-project</code> e al suo interno crea un file <code>docker-compose.yml</code> con il seguente contenuto:</p>
     <pre><code>version: "3.9"
