@@ -47,8 +47,6 @@
     </form>
 
     <?php
-ob_start(); // Inizia l'output buffering
-
 require "connect/connect.php";
 
 // Se il form è stato inviato
@@ -62,7 +60,7 @@ if(isset($_POST['register'])) {
     if ($conn->query($sql) === TRUE) {
         echo "<p>Registrazione avvenuta con successo!</p>";
         // Reindirizza a mostra.php dopo la registrazione
-        header("Location: mostra.php");
+        header("location: mostra.php");
         exit();
     } else {
         echo "Errore durante la registrazione: " . $conn->error;
@@ -72,7 +70,6 @@ if(isset($_POST['register'])) {
 // Chiudi la connessione
 $conn->close();
 
-ob_end_flush(); // Invia l'output memorizzato nel buffer e disattiva l'output buffering
 ?>
 
 </body>
