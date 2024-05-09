@@ -38,7 +38,7 @@
 </head>
 <body>
     <h2>Registration</h2>
-    <form action="register.php" method="post">
+    <form method="post">
         <label for="email">Email:</label>
         <input type="text" id="email" name="email" required>
         <label for="password">Password:</label>
