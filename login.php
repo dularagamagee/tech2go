@@ -1,3 +1,33 @@
+<?php
+session_start(); // Avvia la sessione all'inizio del file
+
+require "connect/connect.php";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    // Esegui la query in modo sicuro utilizzando prepared statements
+    $stmt = $conn->prepare("SELECT * FROM utente WHERE email = ? AND password = ?");
+    $stmt->bind_param("ss", $email, $password);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    if ($result->num_rows > 0) {
+        $user_data = $result->fetch_assoc();
+        $_SESSION['id_user'] = $user_data['id'];        
+        $_SESSION['email'] = $user_data['email']; 
+        header('location: test.html');
+        exit(); // Termina lo script dopo il reindirizzamento
+    } else {
+        echo "Spiacente, le credenziali sono errate";
+    }
+
+    $stmt->close();
+    $conn->close();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,28 +96,3 @@ input[type="submit"]:hover {
 </div>
 </body>
 </html>
-
-
-<?php
-require "connect/connect.php";
-$email = $_POST['email'];
-$password = $_POST['password'];
-$sql = "SELECT * FROM utente WHERE email='$email'";
-$result = $conn->query($sql);
-if ($result->num_rows == 0) {
-    echo "L'utente utilizzato non è registrato";
-} else {
-    $sql = "SELECT * FROM utente WHERE email = '$email' AND password = '$password'";
-    $result = $conn->query($sql);
-    if ($result->num_rows > 0) {
-        session_start();
-        $user_data = $result->fetch_assoc();
-        $_SESSION['id_user'] = $user_data['id'];        
-        $_SESSION['nickname'] = $user_data['nickname']; 
-        header('location: test.html');
-    } else {
-        echo "Spiacente le credenziali sono errate";
-    }
-}
-$conn->close();
-?>
