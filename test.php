@@ -59,10 +59,8 @@ pre {
 
     <h2>Passi:</h2>
     <?php
-    // Avvia la sessione
+    require "connect/connect.php";
     session_start();
-
-    // Verifica se l'email della sessione è impostata
     if(isset($_SESSION['email'])) {
         echo '<p>Email della sessione: ' . $_SESSION['email'] . '</p>';
     }
