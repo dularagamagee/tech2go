@@ -505,7 +505,7 @@ footer .copy span {
     <header>
       <h3>AWS DON</h3>
       <ul>
-        <li><a href="#one">Home</a></li>
+        <li><a href="#one">INTRODUZIONE</a></li>
         <li><a href="#two">About</a></li>
         <li><a href="#three">Services</a></li>
         <li><a href="#four">Reviews</a></li>
