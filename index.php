@@ -536,25 +536,24 @@ footer .copy span {
       <p class="lead">
         Per iniziare, installa Docker e Docker Compose utilizzando i seguenti comandi:
       </p>
-      <div class="command">
-        <p class="lead darker-bg">sudo apt update</p>
+      <div class="command darker-bg">
+        <p class="lead">sudo apt update</p>
       </div>
-      <div class="command">
-        <p class="lead darker-bg">sudo apt install -y docker.io</p>
+      <div class="command darker-bg">
+        <p class="lead">sudo apt install -y docker.io</p>
       </div>
-      <div class="command">
-        <p class="lead darker-bg">sudo systemctl enable docker</p>
+      <div class="command darker-bg">
+        <p class="lead">sudo systemctl enable docker</p>
       </div>
-      <div class="command">
-        <p class="lead darker-bg">sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose</p>
+      <div class="command darker-bg">
+        <p class="lead">sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose</p>
       </div>
-      <div class="command">
-        <p class="lead darker-bg">sudo chmod +x /usr/local/bin/docker-compose</p>
+      <div class="command darker-bg">
+        <p class="lead">sudo chmod +x /usr/local/bin/docker-compose</p>
       </div>
     </div>
   </div>
 </section>
-
     <section id="three">
       <div class="grid g_two">
         <div>
