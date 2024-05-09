@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
 <form method="post">
-<div class="login-box">
+<div class="container fade-in">
         <div class="login-header">
             <header>Login</header>
         </div>
@@ -55,5 +55,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </div>
 </form>
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var fadeElems = document.querySelectorAll(".fade-in");
+
+            fadeElems.forEach(function(elem) {
+                elem.classList.add("active");
+            });
+        });
+    </script>
 </body>
 </html>
