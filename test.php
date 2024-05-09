@@ -9,6 +9,13 @@ if (!isset($_SESSION['email'])) {
 }
 
 require "connect/connect.php";
+// Logout se richiesto
+if(isset($_GET['logout'])) {
+    session_unset();
+    session_destroy();
+    header("Location: login.php");
+    exit();
+}
 ?>
 <!DOCTYPE html>
 <html lang="it">
