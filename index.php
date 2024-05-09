@@ -515,7 +515,7 @@ footer .copy span {
     <section id="one">
       <div class="content parallax">
         <div>
-          <h1>AWS DON</h1>
+          <h1>AWSDON</h1>
           <svg class="title">
             <text x="0" y="40">AWS DON</text>
             <path d="M 0 66 50 61"></path>
