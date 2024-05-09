@@ -38,6 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <title>Login - AWS PROJECT</title>
 </head>
 <body>
+<form method="post">
 <div class="login-box">
         <div class="login-header">
             <header>Login</header>
@@ -53,5 +54,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <label for="submit">Accedi</label>
         </div>
     </div>
+</form>
 </body>
 </html>
