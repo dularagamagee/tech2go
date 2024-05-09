@@ -522,31 +522,28 @@ footer .copy span {
           </svg>
           <p class="lead">
           Nella seguente relazione, ti guiderò attraverso i passaggi per configurare un ambiente Docker per un progetto web, utilizzando Docker e Docker Compose. Questi strumenti semplificano la gestione dei container e consentono di creare un ambiente isolato e portatile per sviluppare e distribuire le tue applicazioni.
-             <a class="leadlink" href="https://caniuse.com/#search=scroll-behavior" target="_blank">Can I use</a> site.
           </p>
           
         </div>
 
-    </section>
-    <section id="two">
-      <h2><span>INTRODUZIONE</span></h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum blanditiis rerum, at sunt fugit nam, labore, quas voluptate et recusandae veniam ea dignissimos deserunt! Veritatis facilis repudiandae libero distinctio tempora.</p>
-      <div class="blocks">
-        <div class="block">
-          <p>TEXT or ICON</p>
-        </div>
-        <div class="block">
-          <p>TEXT or ICON</p>
-        </div>
-        <div class="block">
-          <p>TEXT or ICON</p>
-        </div>
-        <div class="block">
-          <p>TEXT or ICON</p>
-        </div>
-      </div>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam perspiciatis vel, soluta earum at iure error eos voluptates excepturi velit! Totam aliquam impedit architecto aperiam officia aliquid, aspernatur magnam recusandae!</p>
-    </section>
+        <section id="two">
+  <h2><span>INDICE</span></h2>
+  <ul class="blocks">
+    <li class="block">
+      <p>PREMESSA</p>
+    </li>
+    <li class="block">
+      <p>TEXT or ICON</p>
+    </li>
+    <li class="block">
+      <p>TEXT or ICON</p>
+    </li>
+    <li class="block">
+      <p>TEXT or ICON</p>
+    </li>
+  </ul>
+</section>
+
     <section id="three">
       <div class="grid g_two">
         <div>
