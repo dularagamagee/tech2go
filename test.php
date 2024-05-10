@@ -1,7 +1,6 @@
 <?php
 // Avvia la sessione all'inizio dello script
 session_start();
-
 // Verifica se l'utente è loggato, altrimenti reindirizza alla pagina di accesso
 if (!isset($_SESSION['email'])) {
     header("Location: login.php");
