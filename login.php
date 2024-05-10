@@ -1,13 +1,5 @@
 <?php
 session_start(); // Avvia la sessione all'inizio del file
-
-if($_SERVER['HTTPS'] != 'on') {
-    $redirectURL = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-    header("Location:$redirectURL");
-    exit();
-}
-
-
 require "connect/connect.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
