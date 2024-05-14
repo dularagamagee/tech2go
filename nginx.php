@@ -1,7 +1,7 @@
 <?php
-session_start();
 // Avvia la sessione all'inizio dello script
-// Verifica se l'utente è loggato, altrimenti reindirizza alla pagina di accesso
+session_start();
+// Verifica se l'utente Ã¨ loggato, altrimenti reindirizza alla pagina di accesso
 if (!isset($_SESSION['email'])) {
     header("Location: login.php");
     exit();
@@ -27,14 +27,21 @@ if(isset($_GET['logout'])) {
 <body>
 <premises>
 
-    <p>Crea una cartella chiamata <code>docker-project</code> e al suo interno crea un file <code>docker-compose.yml</code> con il seguente contenuto:</p>
-    <pre><code>version: "3.9"
+        <?php
+    session_start();
+    if(isset($_SESSION['email'])) {
+        echo '<p>Buona Lettura ' . $_SESSION['email'] . '</p>';
+    }
+    ?>
+    <premises>
+    <h4>Crea una cartella chiamata docker-project e al suo interno docker-compose.ymlcon il seguente contenuto</h4>
+    <code>version: "3.9"
 services:
   nginx:
     image: nginx:latest
     container_name: nginx-container
     ports:
-      - 80:80</code></pre>
+      - 80:80</code>
 
     <h3>Avvia Nginx:</h3>
     <p>Avvia il container Nginx con il comando:</p>
