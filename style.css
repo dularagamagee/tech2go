@@ -38,7 +38,8 @@ premises h4 {
 }
 
 premises p {
-    margin-bottom: 10px;
+    margin-left: 5%; /* Imposta il margin-left al 20% dello spazio disponibile */
+    margin-bottom: 5px;
 }
 
 premises code {
