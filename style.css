@@ -83,6 +83,11 @@ article {
   }
 }
 
+h4 {
+    font-family: 'Baskerville', serif;
+    /* Aggiungi altri stili a piacere */
+}
+
 
 h2 {
   margin: 0;
