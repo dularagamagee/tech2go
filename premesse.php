@@ -26,8 +26,7 @@ if(isset($_GET['logout'])) {
 </head>
 <body>
 <div class="container">
-    <h1>        AWS DON</h1>
-    <?php
+        <?php
     session_start();
     if(isset($_SESSION['email'])) {
         echo '<p>Buona Lettura ' . $_SESSION['email'] . '</p>';
@@ -35,13 +34,17 @@ if(isset($_GET['logout'])) {
     ?>
 
 
-    <h3>      Premesse:</h3>
-    <p2>Per iniziare, installa Docker e Docker Compose utilizzando i seguenti comandi:</p2>
-    <code>sudo apt update</code>
-    <code>sudo apt install -y docker.io</code>
-    <code>sudo systemctl enable docker</code>
-    <code>sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose</code>
-    <code>sudo chmod +x /usr/local/bin/docker-compose</code>
+<premises>
+            <h4>Premesse:</h4>
+            <p>Prima di iniziare, assicurati di seguire i passaggi seguenti:</p>
+            <ul>
+                <li>Aggiorna il sistema operativo con <code>sudo apt update</code></li>
+                <li>Installa Docker e Docker Compose con <code>sudo apt install -y docker.io</code></li>
+                <li>Abilita il servizio Docker con <code>sudo systemctl enable docker</code></li>
+                <li>Scarica Docker Compose con <code>sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose</code></li>
+                <li>Assegna i permessi di esecuzione a Docker Compose con <code>sudo chmod +x /usr/local/bin/docker-compose</code></li>
+            </ul>
+        </premises>
 
     <!-- Rimuovi il resto del codice PHP -->
 
