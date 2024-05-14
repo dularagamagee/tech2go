@@ -26,7 +26,7 @@ if(isset($_GET['logout'])) {
 </head>
 <body>
 <div class="container">
-    <h1>AWS DON</h1>
+    <h2>        AWS DON</h2>
     <?php
     session_start();
     if(isset($_SESSION['email'])) {
