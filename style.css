@@ -4,7 +4,7 @@
 premises {
     margin-bottom: 20px;
     font-family: 'Indie Flower', 'Patrick Hand SC', 'Comic Neue', 'Comic Sans', 'Comic Sans MS', Helvetica, Arial, sans-serif;
-    font-size: 4vmin; /* Dimensione del testo ridotta */
+    font-size: 1vmin; /* Dimensione del testo ridotta */
     background: white;
     padding: 1em 1.5em; /* Ridotto il padding per adattarsi alla nuova dimensione del testo */
     width: 85vmin;
