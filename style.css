@@ -103,6 +103,27 @@ h2 {
   }
 }
 
+h1 {
+    margin: 0;
+    font-size: 6.5vmin;
+    white-space: pre;
+    position: relative;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      width: 95%;
+      height: 100%;
+      background: #f003;
+      background: radial-gradient(175% 100% at 50% 100%, #0000 50%, #000 51% 55%, #0000 56%);
+      left: -1%;
+      top: 25%;
+      transform: rotate(0.25deg)
+    }
+  }
+  
+
+
 del {
   text-decoration-color: #f00c;
 }

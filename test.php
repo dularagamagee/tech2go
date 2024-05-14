@@ -50,7 +50,7 @@ if(isset($_GET['logout'])) {
 
 
 <article>
-  <h2>AWS DON</h2>
+  <h1>AWS DON</h1>
   <ol>
     <li><del>Premesse</del></li>
     <li><del>Nginx</del></li>
