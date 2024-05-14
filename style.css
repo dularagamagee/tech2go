@@ -16,12 +16,6 @@ premises {
         repeating-linear-gradient(#0000 0 5%, #99f 0 5.1%) 100% 50% / calc(100% - 2.35em) 82% no-repeat,
         #eee;
     border-radius: 0.05em;
-    box-shadow:
-        0.1em 0.1em #ddd,
-        0.065em 0.05em #fff,
-        0.15em 0.15em #bbb,
-        0.125em 0 0 0.15em #333,
-        0.25em 0.125em 0 0.15em #000;
     transform: rotate(3deg) translate(5%, 5%);
     transform-origin: 10% 10%;
     position: relative;
