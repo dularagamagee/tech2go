@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if ($result->num_rows > 0) {
         $user_data = $result->fetch_assoc();
-        $_SESSION['id_user'] = $user_data['id'];        
+        $_SESSION['id_user'] = $user_data['id'];
         $_SESSION['email'] = $user_data['email']; 
         header('location: index.php');
         exit(); // Termina lo script dopo il reindirizzamento
