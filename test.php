@@ -34,17 +34,13 @@ if(isset($_GET['logout'])) {
     }
     ?>
     <h2>Premesse:</h2>
-    <p2>Per iniziare, installa Docker e Docker Compose utilizzando i seguenti comandi:</p2>
-    <code>sudo apt update</code>
-    <code>sudo apt install -y docker.io</code>
-    <code>sudo systemctl enable docker</code>
-    <code>sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose</code>
-    <code>sudo chmod +x /usr/local/bin/docker-compose</code>
-
+    <p2>Per iniziare, installa Docker e Docker Compose utilizzando i seguenti comandi:
+    <p2>sudo apt update</p2>
+    <p2>sudo apt install -y docker.io</p2>
+    <p2>sudo systemctl enable docker</p2>
+    <p2>sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose</p2>
+    <p2>sudo chmod +x /usr/local/bin/docker-compose</p2>
     <!-- Rimuovi il resto del codice PHP -->
-
-</div>
 </section>
-
 </body>
 </html>
