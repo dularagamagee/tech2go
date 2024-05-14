@@ -3,7 +3,6 @@
 /* Stili per il tag <premises> */
 premises {
     margin-bottom: 20px;
-    margin-left: 20%; /* Imposta il margin-left al 20% dello spazio disponibile */
     font-family: 'Indie Flower', 'Patrick Hand SC', 'Comic Neue', 'Comic Sans', 'Comic Sans MS', Helvetica, Arial, sans-serif;
     font-size: 2vmin; /* Dimensione del testo ridotta */
     background: white;
