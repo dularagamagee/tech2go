@@ -26,7 +26,7 @@ if(isset($_GET['logout'])) {
 </head>
 <body>
 <div class="container">
-    <h2>        AWS DON</h2>
+    <h1>        AWS DON</h1>
     <?php
     session_start();
     if(isset($_SESSION['email'])) {
@@ -50,7 +50,7 @@ if(isset($_GET['logout'])) {
 
 
 <article>
-  <h1>AWS DON</h1>
+  <h2>AWS DON</h2>
   <ol>
     <li><del>Premesse</del></li>
     <li><del>Nginx</del></li>
