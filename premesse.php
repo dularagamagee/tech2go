@@ -29,7 +29,7 @@ if(isset($_GET['logout'])) {
         <?php
     session_start();
     if(isset($_SESSION['email'])) {
-        echo '<p>Buona Lettura ' . $_SESSION['email'] . '</p>';
+        echo '<p>      Buona Lettura ' . $_SESSION['email'] . '</p>';
     }
     ?>
 
