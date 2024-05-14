@@ -25,7 +25,6 @@ if(isset($_GET['logout'])) {
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
     <premises>
         <?php
     session_start();
@@ -33,7 +32,7 @@ if(isset($_GET['logout'])) {
         echo '<p>Buona Lettura ' . $_SESSION['email'] . '</p>';
     }
     ?>
-    <premis>
+    <premises>
 
 
 <premises>
