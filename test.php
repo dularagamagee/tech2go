@@ -33,7 +33,6 @@ if(isset($_GET['logout'])) {
         echo '<p>Buona Lettura ' . $_SESSION['email'] . '</p>';
     }
     ?>
-
     <h2>Premesse:</h2>
     <p2>Per iniziare, installa Docker e Docker Compose utilizzando i seguenti comandi:</p2>
     <code>sudo apt update</code>
