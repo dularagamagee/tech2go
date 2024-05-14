@@ -1,3 +1,21 @@
+<?php
+// Avvia la sessione all'inizio dello script
+session_start();
+// Verifica se l'utente Ã¨ loggato, altrimenti reindirizza alla pagina di accesso
+if (!isset($_SESSION['email'])) {
+    header("Location: login.php");
+    exit();
+}
+
+require "connect/connect.php";
+// Logout se richiesto
+if(isset($_GET['logout'])) {
+    session_unset();
+    session_destroy();
+    header("Location: login.php");
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="it">
 <head>
