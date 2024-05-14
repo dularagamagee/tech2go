@@ -52,7 +52,7 @@ if(isset($_GET['logout'])) {
 <article>
   <h2>AWS DON</h2>
   <ol>
-    <li><del>Premesse</del></li>
+  <li><del><a href="premesse.php">Premesse</a></del></li>
     <li><del>Nginx</del></li>
     <li><del>Certificato</del></li>
     <li><del>Proxy</del></li>

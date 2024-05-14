@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $user_data = $result->fetch_assoc();
         $_SESSION['id_user'] = $user_data['id'];        
         $_SESSION['email'] = $user_data['email']; 
-        header('location: test.php');
+        header('location: index.php');
         exit(); // Termina lo script dopo il reindirizzamento
     } else {
         echo "Spiacente, le credenziali sono errate";
