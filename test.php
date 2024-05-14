@@ -25,7 +25,7 @@ if(isset($_GET['logout'])) {
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
+<section class="wavy">
     <h1>AWS DON</h1>
     <?php
     session_start();
@@ -33,7 +33,6 @@ if(isset($_GET['logout'])) {
         echo '<p>Buona Lettura ' . $_SESSION['email'] . '</p>';
     }
     ?>
-    <section class="wavy">
 
     <h2>Premesse:</h2>
     <p2>Per iniziare, installa Docker e Docker Compose utilizzando i seguenti comandi:</p2>
