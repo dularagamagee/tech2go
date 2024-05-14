@@ -50,18 +50,18 @@ if(isset($_GET['logout'])) {
 
 
 <article>
-  <h2>How to stay on top of things:</h2>
+  <h2>AWS DON</h2>
   <ol>
-    <li><del>Make a list</del></li>
-    <li>Track your time</li>
-    <li>Time box all tasks</li>
-    <li>Do more difficult tasks first</li>
-    <li>Take breaks!!</li>
-    <li><u>FOCUS</u>: Don't multitask</li>
-    <li><del>z-index: 4;</del></li>
-    <li><del>z-index: 9999;</del></li>
-    <li><del>z-index: 999999999;</del></li>
-    <li>z-index: max(infinity);</li>
+    <li><del>Premesse</del></li>
+    <li><del>Nginx</del></li>
+    <li><del>Certificato</del></li>
+    <li><del>Proxy</del></li>
+    <li><del>Php</del></li>
+    <li><del>Dockerfile</del></li>
+    <li><del>Avvio Container</del></li>
+    <li><del>MariaDB</del></li>
+    <li><del>Push&Pull</del></li>
+    <li>Http -> Https</li>
   </ol>
 </article>
 
