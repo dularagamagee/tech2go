@@ -26,12 +26,14 @@ if(isset($_GET['logout'])) {
 </head>
 <body>
 <div class="container">
+    <premises>
         <?php
     session_start();
     if(isset($_SESSION['email'])) {
-        echo '<p>                    Buona Lettura ' . $_SESSION['email'] . '</p>';
+        echo '<p>Buona Lettura ' . $_SESSION['email'] . '</p>';
     }
     ?>
+    <premis>
 
 
 <premises>
@@ -46,7 +48,6 @@ if(isset($_GET['logout'])) {
             </ul>
         </premises>
 
-    <!-- Rimuovi il resto del codice PHP -->
 
 </div>
 
