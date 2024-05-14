@@ -25,7 +25,7 @@ if(isset($_GET['logout'])) {
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<premisis>
+<premises>
 
     <p>Crea una cartella chiamata <code>docker-project</code> e al suo interno crea un file <code>docker-compose.yml</code> con il seguente contenuto:</p>
     <pre><code>version: "3.9"
@@ -39,7 +39,7 @@ services:
     <h3>Avvia Nginx:</h3>
     <p>Avvia il container Nginx con il comando:</p>
     <code>sudo docker-compose up -d</code>
-</premis>
+</premises>
 
 <article>
     <h2>AWS DON</h2>
