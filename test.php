@@ -65,7 +65,6 @@ if(isset($_GET['logout'])) {
   </ol>
 </article>
 
-<a id="comicss-link" target="_blank" href="https://comicss.art">More on comiCSS</a>
 
 </body>
 </html>
