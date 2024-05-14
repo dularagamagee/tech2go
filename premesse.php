@@ -35,7 +35,7 @@ if(isset($_GET['logout'])) {
 
 
 <premises>
-            <h4>Premesse:</h4>
+            <h4>    Premesse:</h4>
             <p>Prima di iniziare, assicurati di seguire i passaggi seguenti:</p>
             <ul>
                 <li>Aggiorna il sistema operativo con <code>sudo apt update</code></li>
