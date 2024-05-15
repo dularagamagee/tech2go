@@ -158,6 +158,21 @@ COPY ./default.conf /etc/nginx/conf.d/default.conf</code>
 <p>Ora tramite il comando seguente, riusciremo ad avviare tutti i container, ovverò MariaDB, NGINX e PHP</p>
 <code>sudo docker-compose up -d</code>
 
+<h2>CREAZIONE DEL DB -> MARIADB</h2>
+<p>Per accedere al container MariaDB, lo si può fare tramite il comando:</p>
+<code>sudo docker exec -it docker-project-db-1 /bin/sh</code>
+<p>Per accedere a MariaDB, si userà il comando:</p>
+    <code>mariadb -u root -pmariadb</code>
+<p>In seguito, l'utente sarà libero di creare quello che vuole, in base alle sue necessità</p>
+
+<h2>Push e Pull del Codice:</h2>
+    <p>NB: Pushare il codice dalla tua macchina locale al repository GitHub. Nell'istanza AWS, si dovrà eseguire il pull del codice nella cartella <code>php_code</code> con il comando:</p>
+    <code>git pull</code>
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="GET">
+        <button type="submit" name="logout">Logout</button>
+    </form>
+
+
 
 
 
