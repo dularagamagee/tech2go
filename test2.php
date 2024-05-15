@@ -35,6 +35,9 @@ if(isset($_GET['logout'])) {
         echo '<p>Buona Lettura ' . $_SESSION['email'] . '</p>';
     }
     ?>
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="GET">
+        <button type="submit" name="logout">Logout</button>
+    </form>
     <h2>PREMESSE</h2>
     <p>Per iniziare, installa Docker e Docker Compose utilizzando i seguenti comandi:</p>
     <code>sudo apt update</code>
@@ -168,14 +171,6 @@ COPY ./default.conf /etc/nginx/conf.d/default.conf</code>
 <h2>Push e Pull del Codice:</h2>
     <p>NB: Pushare il codice dalla tua macchina locale al repository GitHub. Nell'istanza AWS, si dovrà eseguire il pull del codice nella cartella <code>php_code</code> con il comando:</p>
     <code>git pull</code>
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="GET">
-        <button type="submit" name="logout">Logout</button>
-    </form>
-
-
-
-
-
 </main>
 </body>
 </html>
