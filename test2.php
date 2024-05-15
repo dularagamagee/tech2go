@@ -89,6 +89,9 @@ volumes:
 <h2>PHP -> DOCKERFILE</h2>
 <p>Sempre all'interno della cartella php_code, andremo ad inserire il documento Dockerfile</p>
 <p>Questo Dockerfile configura un'immagine Docker basata su PHP 7.0 FPM, installando e abilitando le estensioni MySQLi e PDO MySQL per consentire connessioni a database MySQL. È ideale per eseguire applicazioni PHP che richiedono queste estensioni per interagire con MySQL.</p>
+<code>FROM php:7.0-fpm
+RUN docker-php-ext-install mysqli pdo pdo_mysql
+RUN docker-php-ext-enable mysqli</code>
 </main>
 </body>
 </html>
