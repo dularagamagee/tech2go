@@ -110,6 +110,21 @@
     margin-inline: -2em;
     padding-inline: 2em;
   }
+
+
+  h1 {
+    width: 50%;   
+    position:sticky;
+    top: 0;
+    color:  var(--primary-color);
+    background: #222;
+    font-size: 5em;
+    line-height: 0.9;
+    z-index: 1;
+    padding-block: 2rem;
+    margin-inline: -2em;
+    padding-inline: 2em;
+  }
   p{
     line-height: 1.75;
   }
