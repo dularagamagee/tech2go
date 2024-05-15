@@ -95,7 +95,7 @@ section a{
     cursor: pointer;
 }
 .submit-btn:hover{
-    background: #000;
+    background: #600808;
     transform: scale(1.05,1);
 }
 .sign-up-link{
