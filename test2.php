@@ -42,10 +42,43 @@ if(isset($_GET['logout'])) {
     <code>sudo systemctl enable docker</code>
     <code>sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose</code>
     <code>sudo chmod +x /usr/local/bin/docker-compose</code>
-    <h2>Generazione del Certificato SSL:</h2>
+    <h2>Generazione del Certificato SSL</h2>
     <p> Si crea una directory <code>ssl</code> all'interno della cartella docker-project e si genera il certificato SSL con i seguenti comandi:</p>
     <code>mkdir /ssl</code>
     <code>sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout key.pem -out cert.pem</code>
+    <h2>Docker-compose.yml</h2>
+    <p> All'interno della cartella docker-project, creiamo il file denominato docker-compose.yml, che ha all'interno, file di confifurazione che contiene informazioni, come la definizione di servizi, configutazione di rete e volumi necessari per far comunicare i container tra loro. All'interno del file docker-compose.yml andremo ad inserire i seguenti comandi:</p>
+    <code>version: "3.9"
+services:
+  nginx:
+    image: nginx:latest
+    container_name: nginx-container
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./ssl:/etc/nginx/certs
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./php_code/:/var/www/html/
+
+  php:
+    build: ./php_code/
+    expose:
+      - 9000
+    volumes:
+      - ./php_code/:/var/www/html/
+
+  db:
+    image: mariadb
+    volumes:
+      - mysql-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: mariadb
+      MYSQL_DATABASE: mysite
+
+volumes:
+  mysql-data:
+</code>
 </main>
 </body>
 </html>
