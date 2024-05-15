@@ -45,7 +45,7 @@ if(isset($_GET['logout'])) {
     <code>sudo systemctl enable docker</code>
     <code>sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose</code>
     <code>sudo chmod +x /usr/local/bin/docker-compose</code>
-    <h2>Generazione del Certificato SSL</h2>
+    <h2>GENERAZIONE DEL CERTIFICATO SSL</h2>
     <p> Si crea una directory ssl all'interno della cartella docker-project e si genera il certificato SSL con i seguenti comandi:</p>
     <code>mkdir /ssl</code>
     <code>sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout key.pem -out cert.pem</code>
