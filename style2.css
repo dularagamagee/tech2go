@@ -125,6 +125,17 @@
     margin-inline: -2em;
     padding-inline: 2em;
   }
+
+
+  code {
+    font-family: "Courier New", Courier, monospace;
+    background-color: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 10px;
+    overflow-x: auto;
+}
   p{
     line-height: 1.75;
   }
