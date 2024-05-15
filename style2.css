@@ -97,7 +97,7 @@
     color: #bbb;
   }
   
-  h1 {
+  h2 {
     width: 100%;   
     position:sticky;
     top: 0;
@@ -112,7 +112,7 @@
   }
 
 
-  h2 {
+  h1 {
     width: 50%;   
     position:sticky;
     top: 0;
