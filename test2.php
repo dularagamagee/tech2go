@@ -42,7 +42,10 @@ if(isset($_GET['logout'])) {
     <code>sudo systemctl enable docker</code>
     <code>sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose</code>
     <code>sudo chmod +x /usr/local/bin/docker-compose</code>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde labore maxime nostrum rerum cumque, soluta nisi impedit, ratione dolorem pariatur voluptates modi itaque. Possimus ullam cumque voluptas explicabo rem mollitia, accusantium alias perferendis eum cupiditate, officiis eius corporis fugit fuga animi quod sequi sit odio neque? Suscipit atque harum facilis eius perspiciatis ab, officia ducimus mollitia! Quod fuga et ipsa autem aspernatur officiis minus iure veritatis asperiores nam illo facere sequi dolorum dolor ipsum pariatur, odio iste ex eum ad explicabo magni architecto? Corporis laboriosam incidunt veniam? Consequuntur cum mollitia dicta beatae pariatur corrupti nesciunt praesentium blanditiis numquam sapiente delectus ea nobis eaque nisi quasi quod similique repellendus fugiat id, minima eos temporibus, repellat error illum. Enim dolorem voluptatibus beatae voluptatum nemo sunt explicabo autem illo et placeat doloremque laborum alias facilis, nostrum officia neque, nisi cupiditate. Magnam mollitia a error qui ex ipsa earum repellendus nobis nostrum? Iure obcaecati, quidem inventore dicta natus id magnam. Eius id quas rem dignissimos commodi voluptatibus velit enim amet illo asperiores quos, expedita, sapiente veniam a porro facere aut error cumque, quisquam in provident! Nobis beatae officia rerum commodi repudiandae mollitia quas, autem tenetur! Eaque facilis error fuga a consequatur saepe tenetur ut!</p>
+    <h2>Generazione del Certificato SSL:</h2>
+    <p> Si crea una directory <code>ssl</code> all'interno della cartella docker-project e si genera il certificato SSL con i seguenti comandi:</p>
+    <code>mkdir /ssl</code>
+    <code>sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout key.pem -out cert.pem</code>
 </main>
 </body>
 </html>
