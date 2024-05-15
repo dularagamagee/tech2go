@@ -43,12 +43,12 @@ if(isset($_GET['logout'])) {
     <code>sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose</code>
     <code>sudo chmod +x /usr/local/bin/docker-compose</code>
     <h2>Generazione del Certificato SSL</h2>
-    <p> Si crea una directory <code>ssl</code> all'interno della cartella docker-project e si genera il certificato SSL con i seguenti comandi:</p>
+    <p> Si crea una directory ssl all'interno della cartella docker-project e si genera il certificato SSL con i seguenti comandi:</p>
     <code>mkdir /ssl</code>
     <code>sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout key.pem -out cert.pem</code>
     <h2>DOCKER-COMPOSE.YML</h2>
     <p> All'interno della cartella docker-project, creiamo il file denominato docker-compose.yml</p>
-    <p>che ha all'interno, file di confifurazione che contiene informazioni, come la definizione di servizi, configutazione di rete e volumi necessari per far comunicare i container tra loro. All'interno del file docker-compose.yml andremo ad inserire i seguenti comandi:</p>
+    <p>che ha all'interno, file di confifurazione che contiene informazioni, come la definizione di servizi, configutazione di rete e volumi necessari per far comunicare i container tra loro, in questo caso intendiamo MARIADB, NGINX e PHP. All'interno del file docker-compose.yml andremo ad inserire i seguenti comandi:</p>
     <code>version: "3.9"
 services:
   nginx:
@@ -92,6 +92,75 @@ volumes:
 <code>FROM php:7.0-fpm
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 RUN docker-php-ext-enable mysqli</code>
+
+
+
+<h2>NGINX</h2>
+<p>Sempre all'interno della cartella docker-project, andremo a creare una cartella denominato nginx, che ci servira per aggiungere le configurazioni del nostro web-server, mediante la creazione del file default.conf, ed inseguito, aggiungendoci questa parte di codice:</p>
+<code>server {
+    listen 80 default_server;
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 443 ssl default_server;
+    include /etc/nginx/mime.types;
+    root /var/www/html;
+    index index.html index.php;
+
+    charset utf-8;
+
+    ssl_certificate /etc/nginx/certs/cert.pem;
+    ssl_certificate_key /etc/nginx/certs/key.pem;
+
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
+
+    location ~ \.css {
+      add_header  Content-Type    text/css;
+    }
+    location ~ \.js {
+      add_header  Content-Type    application/x-javascript;
+    }
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location = /robots.txt { access_log off; log_not_found off; }
+
+    access_log off;
+    error_log /var/log/nginx/error.log error;
+
+    sendfile off;
+
+    location ~ \.php$ {
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        fastcgi_pass php:9000;
+        fastcgi_index index.php;
+        include fastcgi_params;
+        fastcgi_read_timeout 300;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+        fastcgi_intercept_errors off;
+        fastcgi_buffer_size 16k;
+        fastcgi_buffers 4 16k;
+    }
+
+    location ~ /\.ht {
+        deny all;
+    }
+}</code>
+
+<p>In seguito andremo ad aggiungere il Dockerdile, dove aggiungeremo le regole seguenti:</p>
+<code>FROM nginx
+COPY ./default.conf /etc/nginx/conf.d/default.conf</code>
+
+
+<h2>AVVIAMENTO CONTAINER</h2>
+<p>Ora tramite il comando seguente, riusciremo ad avviare tutti i container, ovverò MariaDB, NGINX e PHP</p>
+<code>sudo docker-compose up -d</code>
+
+
+
+
 </main>
 </body>
 </html>
