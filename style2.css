@@ -135,7 +135,9 @@
     display: block;
     margin-bottom: 10px;
     overflow-x: auto;
+    color: black; /* Cambia il colore del testo */
 }
+
   p{
     line-height: 1.75;
   }
