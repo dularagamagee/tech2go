@@ -113,18 +113,19 @@
 
 
   h2 {
-    width: 40%;   
-    position:sticky;
+    width: auto;   
+    position: sticky;
     top: 0;
-    color:  var(--primary-color);
+    color: var(--primary-color);
     background: #222;
-    font-size: 5em;
-    line-height: 0.9;
+    font-size: 2em; /* Ridotto rispetto al precedente 5em */
+    line-height: 1.2; /* Mantenuto un buon rapporto di linea */
     z-index: 1;
-    padding-block: 2rem;
-    margin-inline: -2em;
-    padding-inline: 2em;
-  }
+    padding-block: 1rem; /* Ridotto rispetto al precedente 2rem */
+    margin-inline: 0; /* Rimosso l'effetto di margine negativo */
+    padding-inline: 1em; /* Ridotto rispetto al precedente 2em */
+}
+
 
 
   code {
