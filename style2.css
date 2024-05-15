@@ -97,7 +97,7 @@
     color: #bbb;
   }
   
-  h2 {
+  h1 {
     width: 100%;   
     position:sticky;
     top: 0;
@@ -112,8 +112,8 @@
   }
 
 
-  h1 {
-    width: 50%;   
+  h2 {
+    width: 40%;   
     position:sticky;
     top: 0;
     color:  var(--primary-color);
