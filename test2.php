@@ -47,7 +47,8 @@ if(isset($_GET['logout'])) {
     <code>mkdir /ssl</code>
     <code>sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout key.pem -out cert.pem</code>
     <h2>Docker-compose.yml</h2>
-    <p> All'interno della cartella docker-project, creiamo il file denominato docker-compose.yml, che ha all'interno, file di confifurazione che contiene informazioni, come la definizione di servizi, configutazione di rete e volumi necessari per far comunicare i container tra loro. All'interno del file docker-compose.yml andremo ad inserire i seguenti comandi:</p>
+    <p> All'interno della cartella docker-project, creiamo il file denominato docker-compose.yml</p>
+    <p>che ha all'interno, file di confifurazione che contiene informazioni, come la definizione di servizi, configutazione di rete e volumi necessari per far comunicare i container tra loro. All'interno del file docker-compose.yml andremo ad inserire i seguenti comandi:</p>
     <code>version: "3.9"
 services:
   nginx:
