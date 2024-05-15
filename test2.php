@@ -46,7 +46,7 @@ if(isset($_GET['logout'])) {
     <p> Si crea una directory <code>ssl</code> all'interno della cartella docker-project e si genera il certificato SSL con i seguenti comandi:</p>
     <code>mkdir /ssl</code>
     <code>sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout key.pem -out cert.pem</code>
-    <h2>Docker-compose.yml</h2>
+    <h2>DOCKER-COMPOSE.YML</h2>
     <p> All'interno della cartella docker-project, creiamo il file denominato docker-compose.yml</p>
     <p>che ha all'interno, file di confifurazione che contiene informazioni, come la definizione di servizi, configutazione di rete e volumi necessari per far comunicare i container tra loro. All'interno del file docker-compose.yml andremo ad inserire i seguenti comandi:</p>
     <code>version: "3.9"
@@ -80,6 +80,11 @@ services:
 volumes:
   mysql-data:
 </code>
+<h2>PHP -> GITHUB</h2>
+<p>Per caricare la repository di github, dobbiamo prima di tutto creare una cartella denominata php_code, all'interno della cartella docker-project</p>
+<p>Successivamente bisognerà clonare tramite il comando git clone, la repository all'interno della cartella php_code</p>
+<code>git clone https://github.com/dularagamagee/tech2go.git ~/docker-project/php_code/</code>
+
 </main>
 </body>
 </html>
