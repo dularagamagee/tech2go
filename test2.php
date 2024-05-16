@@ -3,7 +3,7 @@
 session_start();
 // Verifica se l'utente Ã¨ loggato, altrimenti reindirizza alla pagina di accesso
 if (!isset($_SESSION['email'])) {
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 }
 
@@ -12,7 +12,7 @@ require "connect/connect.php";
 if(isset($_GET['logout'])) {
     session_unset();
     session_destroy();
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 }
 ?>
