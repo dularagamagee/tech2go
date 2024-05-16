@@ -141,7 +141,7 @@
 
 /* Stile per il bottone di logout */
 button[name="logout"] {
-  background-color: #ff5722; /* Colore di sfondo */
+  background-color: #e97451; /* Colore di sfondo */
   color: white; /* Colore del testo */
   border: none; /* Rimuove il bordo predefinito */
   padding: 10px 20px; /* Padding interno del bottone */
@@ -152,7 +152,7 @@ button[name="logout"] {
 
 /* Stile per il bottone di logout quando il mouse è sopra */
 button[name="logout"]:hover {
-  background-color: #e64a19; /* Colore di sfondo al passaggio del mouse */
+  background-color: #b9330b; /* Colore di sfondo al passaggio del mouse */
 }
 
 
