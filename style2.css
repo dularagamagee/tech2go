@@ -138,6 +138,24 @@
     color: black; /* Cambia il colore del testo */
 }
 
+
+/* Stile per il bottone di logout */
+button[name="logout"] {
+  background-color: #ff5722; /* Colore di sfondo */
+  color: white; /* Colore del testo */
+  border: none; /* Rimuove il bordo predefinito */
+  padding: 10px 20px; /* Padding interno del bottone */
+  font-size: 16px; /* Dimensione del testo */
+  border-radius: 5px; /* Angoli arrotondati */
+  cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+}
+
+/* Stile per il bottone di logout quando il mouse è sopra */
+button[name="logout"]:hover {
+  background-color: #e64a19; /* Colore di sfondo al passaggio del mouse */
+}
+
+
   p{
     line-height: 1.75;
   }
