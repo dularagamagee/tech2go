@@ -171,6 +171,26 @@ COPY ./default.conf /etc/nginx/conf.d/default.conf</code>
 <h2>Push e Pull del Codice:</h2>
     <p>NB: Pushare il codice dalla tua macchina locale al repository GitHub. Nell'istanza AWS, si dovrà eseguire il pull del codice nella cartella <code>php_code</code> con il comando:</p>
     <code>git pull</code>
+
+    <h2>REDIRECT HTTP -> HTTPS</h2>
+    <p>Nel default.conf, della cartella nginx, viene aggiunto un server che ascolta sulla porta 80 e reindirizza tutte le richieste a HTTPS (porta 443) utilizzando un redirect 301, che sta ad indicare uno spostamento permanente sul URL</p>
+    <code>server {
+    listen 80 default_server;
+    server_name _;
+
+    location / {
+        return 301 https://$host$request_uri;
+    }
+}
+</code>
+
+<p>Mentre nel docker-compose.yml, bisogna assicurarsi di montare i volumi corretti e mappare le porte 80 e 443, ovvero rendendole in ascolto</p>
+<code>nginx:
+    image: nginx:latest
+    container_name: nginx-container
+    ports:
+      - 80:80
+      - 443:443</code>
 </main>
 </body>
 </html>
